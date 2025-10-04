@@ -1,0 +1,42 @@
+<div class="demo-title">
+    <h1>Live Tutorial: The OAuth2 Handshake</h1>
+    <p>Watch how you grant one app permission to access your data in another, <strong>without ever sharing your password.</strong></p>
+</div>
+
+<div class="tutorial-stage">
+    <div class="tutorial-controls">
+        <h3>Demonstration Control:</h3>
+        <button id="start-oauth-demo-btn">▶️ Run OAuth2 Demo</button>
+    </div>
+
+    <!-- This new grid will hold our structured, three-column text -->
+    <div class="tutorial-grid oauth-three-column">
+        <div class="browser-pane" id="user-pane">
+            <div class="pane-header"><img src="assets/browser.svg" alt="Browser Icon"> You 🧑‍💻 (Resource Owner)</div>
+        </div>
+        <div class="server-pane" id="client-app-pane">
+            <div class="pane-header"><img src="assets/server.svg" alt="Server Icon"> Our App 🏢 (Client)</div>
+        </div>
+        <div class="server-pane" id="auth-server-pane">
+             <div class="pane-header auth-server-header"><img src="assets/server.svg" alt="Server Icon"> PhotoService 🛡️ (Auth Server)</div>
+        </div>
+    </div>
+</div>
+
+<!-- Simulated Consent Modal with corrected SVG logo -->
+<div id="consent-modal" class="modal-overlay hidden">
+    <div class="modal-content">
+        <!-- FIXED SVG LOGO -->
+        <svg class="modal-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm-5 7a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1zm1 3a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H8a1 1 0 0 1-1-1z"/></svg>
+        <h3>PhotoService</h3>
+        <p><strong>Our App</strong> is requesting permission to:</p>
+        <ul>
+            <li>✅ View your photos and albums</li>
+        </ul>
+        <p><small>You are on the secure PhotoService website. Your password is safe.</small></p>
+        <div class="modal-actions">
+            <button id="consent-deny-btn">Deny</button>
+            <button id="consent-allow-btn">Allow</button>
+        </div>
+    </div>
+</div>

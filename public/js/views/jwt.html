@@ -1,0 +1,37 @@
+<div class="demo-title">
+    <h1>Live Tutorial: The JWT Handshake</h1>
+    <p>Watch a stateless login happen in real-time. The server creates a secure "VIP Pass" and stores nothing about your session.</p>
+</div>
+
+<div class="tutorial-stage">
+    <div class="tutorial-controls">
+        <h3>Choose a Demonstration:</h3>
+        <button id="start-login-demo-btn">▶️ Run Login Demo</button>
+        <button id="start-profile-demo-btn">▶️ Run Profile Access Demo</button>
+        <button id="start-refresh-demo-btn">▶️ Run Token Refresh Demo</button>
+    </div>
+
+    <div class="live-status">
+        <div class="status-box">
+            <h4><img src="assets/browser.svg" alt="Browser Icon"> Browser Local Storage</h4>
+            <pre id="live-localstorage-status">empty</pre>
+        </div>
+        <div class="status-box">
+            <h4><img src="assets/server.svg" alt="Server Icon"> Server State (Valid Refresh Tokens)</h4>
+            <pre id="live-server-status">[]</pre>
+        </div>
+    </div>
+    
+    <!-- This new grid will hold our structured text -->
+    <div class="tutorial-grid">
+        <div class="browser-pane" id="browser-pane">
+            <div class="pane-header"><img src="assets/browser.svg" alt="Browser Icon"> You on your Browser</div>
+        </div>
+        <div class="communication-pane" id="communication-lane-container">
+             <div id="communication-lane"></div>
+        </div>
+        <div class="server-pane" id="server-pane">
+            <div class="pane-header"><img src="assets/server.svg" alt="Server Icon"> Web Server</div>
+        </div>
+    </div>
+</div>

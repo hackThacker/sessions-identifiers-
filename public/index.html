@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Authentication Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-3.5-8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm7 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm-9.134-4.042a.5.5 0 0 1 .434-.958 6.5 6.5 0 0 1 10.4 0 .5.5 0 0 1 .434.958.5.5 0 0 1-.958-.434 5.5 5.5 0 0 0-8.884 0 .5.5 0 0 1-.958.434z"/></svg>
+                <h2>Auth Guide</h2>
+            </div>
+            <nav>
+                <a href="#home" class="nav-link active">
+                    <span class="icon">🏠</span> Home
+                </a>
+                <a href="#session" class="nav-link">
+                    <span class="icon">🎟️</span> Sessions & Cookies
+                </a>
+                <a href="#jwt" class="nav-link">
+                    <span class="icon">💳</span> JWT Tokens
+                </a>
+                <a href="#oauth" class="nav-link">
+                    <span class="icon">🔑</span> OAuth 2.0
+                </a>
+            </nav>
+            <div class="footer">
+                <p>Learn auth visually.</p>
+            </div>
+        </aside>
+        
+        <main id="app" class="main-content">
+            <!-- Content from views will be loaded here by main.js -->
+        </main>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
